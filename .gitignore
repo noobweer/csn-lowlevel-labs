@@ -1,0 +1,44 @@
+# Ignore all files by default (catches compiled executables without extension)
+*
+
+# Allow directories so git can traverse them
+!*/
+
+# Allow files with extensions
+!*.*
+
+# Allow standard files without extension
+!Makefile
+!makefile
+!GNUmakefile
+!LICENSE
+!README
+!README.*
+!.gitignore
+!.gitattributes
+!.clang-*
+
+# Compiled object files, libraries, and executables with extensions
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+
+# Debug symbols & build directories
+*.dSYM/
+build/
+bin/
+cmake-build-*/
+
+# IDE / Editor configs and temporary files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
