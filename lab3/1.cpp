@@ -12,61 +12,61 @@ int main() {
         jmp Part1
 
         Part1:
-        fld p1
-        fsub p1 + 4
-        fdiv p1 + 8
-        jmp Part2
+            fld p1
+            fsub p1 + 4
+            fdiv p1 + 8
+            jmp Part2
 
         Part2:
-        fld p2 + 4
-        fdiv p2 + 8
+            fld p2 + 4
+            fdiv p2 + 8
 
-        fld x
-        fsub a
-        fsin
+            fld x
+            fsub a
+            fsin
 
-        fmul p2
-        fadd
-        jmp Part3
+            fmul p2
+            fadd
+            jmp Part3
 
         Part3:
-        fld p3 + 4
-        fdiv p3 + 8
-        fadd p3
+            fld p3 + 4
+            fdiv p3 + 8
+            fadd p3
 
-        fld p3 + 16
-        fldl2e
-        fmul
-        fld st(0)
-        frndint
-        fsub st(1), st(0)
-        fxch
-        f2xm1
-        fld1
-        fadd
-        fscale
-        fstp st(1)
+            fld p3 + 16
+            fldl2e
+            fmul
+            fld st(0)
+            frndint
+            fsub st(1), st(0)
+            fxch
+            f2xm1
+            fld1
+            fadd
+            fscale
+            fstp st(1)
 
-        fld1
-        fadd
+            fld1
+            fadd
 
-        fld p3 + 4
-        fdiv p3 + 12
+            fld p3 + 4
+            fdiv p3 + 12
 
-        fmul
+            fmul
 
-        fld p3 + 16
-        fmul p3 + 20
+            fld p3 + 16
+            fmul p3 + 20
 
-        fadd
+            fadd
 
-        fdiv
-        jmp Result
+            fdiv
+            jmp Result
 
         Result:
-        fmul
-        fmul
-        fstp y
+            fmul
+            fmul
+            fstp y
     }
 
     std::cout << y;
